@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Prediction Result</title>
+    <link rel ="stylesheet" href ="/static/css/style.css"
+</head>
+<body>
+    <div class="container">
+
+        <h1>Prediction Result</h1>
+
+        <p>Student Performance Analysis</p>
+
+        <p><strong>School:</strong> {{ school }}</p>
+        <p><strong>Age:</strong> {{ age }}</p>
+        <p><strong>Study Time:</strong> {{ studytime }}</p>
+        <p><strong>Previous Failures:</strong> {{ failures }}</p>
+        <p><strong>Absences:</strong> {{ absences }}</p>
+
+        <div class="result">
+            <h2>{{ prediction_text }}</h2>
+        </div>
+
+        <a href="/">Predict Another Student</a>
+
+    </div>
+</body>
+</html>

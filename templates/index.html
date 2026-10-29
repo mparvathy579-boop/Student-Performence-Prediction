@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Student Data Management</title>
+    <link rel ="stylesheet" href ="/static/css/style.css"
+
+</head>
+<body>
+    <h1>Mark Prediction</h1>
+    <p>Enter the details to predict the mark of the student</p>
+
+    <form action="/predict" method="POST">
+
+
+    <h3>Student Information</h3>
+
+        <label>School:</label>
+        <select name="school" required>
+            <option value="GP">GP</option>
+            <option value="MS">MS</option>
+        </select><br><br>
+
+
+        <label>Age:</label>
+           <input type="number" name="age" required><br><br>
+
+        <label>Sex:</label>
+        <select name="sex" required>
+            <option value="F">Female</option>
+            <option value="M">Male</option>
+        </select><br><br>
+
+
+        <label>Address:</label>
+        <select name="address" required>
+            <option value="U">Urban</option>
+            <option value="R">Rural</option>
+        </select><br><br>
+
+         <label>Mother's Job:</label>
+        <select name="Mjob" required>
+            <option value="teacher">Teacher</option>
+            <option value="health">Health</option>
+            <option value="services">Services</option>
+            <option value="at_home">At home</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Father's Job:</label>
+        <select name="Fjob" required>
+            <option value="teacher">Teacher</option>
+            <option value="health">Health</option>
+            <option value="services">Services</option>
+            <option value="at_home">At home</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+
+        <label>Reason for Choosing School:</label>
+        <select name="reason" required>
+            <option value="course">Course</option>
+            <option value="home">Near home</option>
+            <option value="reputation">Reputation</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+
+         <label>Guardian:</label>
+        <select name="guardian" required>
+            <option value="mother">Mother</option>
+            <option value="father">Father</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+
+         <h3>Study Habits and Support</h3>
+
+        <label>Travel Time (1-4):</label>
+        <input type="number" name="traveltime" min="1" max="4" required><br><br>
+
+        <label>Study Time (1-4):</label>
+        <input type="number" name="studytime" min="1" max="4" required><br><br>
+
+        <label>Past Class Failures:</label>
+        <input type="number" name="failures" min="0" required><br><br>
+
+        <label>School Support:</label>
+        <select name="schoolsup" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label>Family Support:</label>
+        <select name="famsup" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label>Paid Classes:</label>
+        <select name="paid" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label>Extracurricular Activities:</label>
+        <select name="activities" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+         <label>Internet Access:</label>
+        <select name="internet" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label>Free Time (1-5):</label>
+        <input type="number" name="freetime" min="1" max="5" required><br><br>
+
+        <label>Number of Absences:</label>
+        <input type="number" name="absences" min="0" required><br><br>
+
+        <button type="submit">Predict Result</button>
+
+</body>
+</html>
